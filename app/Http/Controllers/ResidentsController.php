@@ -36,7 +36,7 @@ class ResidentsController extends Controller
      * @param  \App\Http\Requests\StoreResidentsRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreResidentsRequest $request)
+    public function store(StoreredidentsRequest $request)
     {
         $residents = new Residents;
         $residents->name= $request->name;
@@ -80,7 +80,7 @@ class ResidentsController extends Controller
      * @param  \App\Models\Residents  $residents
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateResidentsRequest $request, Residents $residents, $id)
+    public function update(UpdateredidentsRequest $request, Residents $residents, $id)
     {
         $resident = $residents->findOrFail($id);
 

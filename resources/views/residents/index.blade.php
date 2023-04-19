@@ -39,4 +39,4 @@
 
 @section('page-script')
 @include('residents.modals.modal-script')
-@endsectionz
+@endsection

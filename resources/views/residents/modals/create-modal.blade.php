@@ -6,8 +6,8 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form action="" method="POST" id="create-form" data-id="123">
-                  @csrf
+        <form action="{{route('residents.store')}}" method="POST" id="create-form">
+                @csrf
               <div class="form-group">
                   <label for="create-name">Name</label>
                   <input type="text" name="name" class="form-control" id="create-name" aria-describedby="emailHelp" placeholder="Taylor Swift ">

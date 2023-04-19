@@ -37,7 +37,7 @@
 
 
 
-      $('#create-button').on('click', function(){
+      $(document).on('click', '#create-button', function(){
         $('#create-modal').find('#create-form').submit();
       })
 
